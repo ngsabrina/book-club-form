@@ -2,14 +2,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Book Club Form</title>
+<title>Thomas Harris Book Club Form</title>
 <link href="css/general.css" rel="stylesheet">
 </head>
 
 <body>
-		<div>
-			<label for="name">Name</label>
-			<input type="text" id="name" class="input-text" required>
+	<h1>Thomas Harris Book Club</h1>
+	<h2>Registration Form</h2>
+	<form>
+		<label for="name">Name
+			<strong class="error">Please enter your name</strong>
+			</label>
+			<input type="text" id="name" class="input-text input-error" required>
 		</div>
 		
 		<div>
@@ -23,8 +27,10 @@
 		</div>
 		
 		<div>
-			<label for="address">Address</label>
-			<input type="text" id="address" required>
+			<label for="address">Address
+		<strong class="error">Please enter your address</strong>
+</label>
+			<input type="text" id="address"  class="input-text input-error" required>
 		</div>
 		
 		<div>
@@ -60,7 +66,6 @@
 		<div>
 			<label for="time">What time of day would be best to meet?</label>
 			<input type="time" id="time" required>
-			<!-- type="time", type="datetime-local" -->
 		</div>
 		
 		<div>
@@ -69,15 +74,24 @@
 		</div>
 		
 		<div>
-			<label for="favebook">Describe your favourite book & author</label>
+			<label for="vote">Which book do you vote we start with?</label>
+			<select id="vote">
+				<option></option>
+				<option>Red Dragon (1981)</option>
+				<option>The Silence of the Lambs (1988)</option>
+				<option>Hannibal (1999)</option>
+				<option>Hannibal Rising (2006)</option>
+			</select>
+		</div>
+		
+		<div>
+			<label for="favebook">Describe your favourite Thomas Harris book</label>
 			<textarea id="favebook" class="input-text"></textarea>
 		</div>
 		
 		<fieldset>
 			<legend>How much do you love this genre?</legend>
-			
-			<!--The name attribute is how the browser knows to group the radio buttons together -->
-			
+						
 			<input type="radio" id="extreme" name="satisfaction">
 			<label for="extreme">I hate it</label>
 			
@@ -92,7 +106,9 @@
 			
 			<input type="radio" id="extremegood" name="satisfaction">
 			<label for="extremegood">I love it</label>
-		</fieldset>
+		</fieldset>	
 		
+	<button type="submit">Submit Form</button>
+	</form>	
 </body>
 </html>
