@@ -1,3 +1,49 @@
-@charset "UTF-8";
-/* CSS Document */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
+label {
+	display: block;
+	
+	cursor: pointer;
+}
+
+input,
+textarea {
+	font-size: 1rem;
+}
+
+.input-text {
+	padding: 0.5em 0.5em;
+	width: 100%;
+	
+	border: 1px solid #ccc;
+	background-image: linear-gradient(to bottom, #efefef, #fff);
+	
+	font-size: 1rem;
+}
+
+input + label {
+	display: inline;
+}
+
+button {
+	padding: 1em;
+	font-size:1.125rem;
+	border: 2px solid #00f;
+	background-image: linear-gradient(to bottom, #00f, #66e);
+	color: #fff;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.error {
+	display: block;
+	color:#f33;
+}
+
+.input-error {
+	border: 3px solid #f33;
+}

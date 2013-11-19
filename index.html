@@ -7,5 +7,92 @@
 </head>
 
 <body>
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" class="input-text" required>
+		</div>
+		
+		<div>
+			<label for="email">Email address</label>
+			<input type="email" id="email" class="input-text" required maxlength="256">
+		</div>
+		
+		<div>
+			<label for="phone">Phone Number</label>
+			<input type="tel" id="phone">
+		</div>
+		
+		<div>
+			<label for="address">Address</label>
+			<input type="text" id="address" required>
+		</div>
+		
+		<div>
+			<label for="city">City</label>
+			<input type="text" id="city" required>
+		</div>
+		
+			<div>
+			<label for="province">Province/Territory</label>
+			<select id="province">
+				<option></option>
+				<option>Québec</option>
+				<option>British Columbia</option>
+				<option>Ontario</option>
+				<option>Alberta</option>
+				<option>Nova Scotia</option>
+				<option>New Brunswick</option>
+				<option>Manitoba</option>
+				<option>Saskatchewan</option>
+				<option>Prince Edward Island</option>
+				<option>Newfoundland and Labrador</option>
+				<option>Yukon</option>
+				<option>Nunavut</option>
+				<option>Northwest Territories</option>
+			</select>
+		</div>
+		
+		<div>
+			<label for="postalcode">Postal Code</label>
+			<input type="text" id="postalcode" required maxlength="7">
+		</div>
+		
+		<div>
+			<label for="time">What time of day would be best to meet?</label>
+			<input type="time" id="time" required>
+			<!-- type="time", type="datetime-local" -->
+		</div>
+		
+		<div>
+			<label for="books">How many books have you read this year?</label>
+			<input type="number" id="books" pattern="[0-9]*" min="0">
+		</div>
+		
+		<div>
+			<label for="favebook">Describe your favourite book & author</label>
+			<textarea id="favebook" class="input-text"></textarea>
+		</div>
+		
+		<fieldset>
+			<legend>How much do you love this genre?</legend>
+			
+			<!--The name attribute is how the browser knows to group the radio buttons together -->
+			
+			<input type="radio" id="extreme" name="satisfaction">
+			<label for="extreme">I hate it</label>
+			
+			<input type="radio" id="dissatisfied" name="satisfaction">
+			<label for="dissatisfied">I don't like it</label>
+			
+			<input type="radio" id="neutral" name="satisfaction">
+			<label for="neutral">It's okay</label>
+			
+			<input type="radio" id="satisfied" name="satisfaction">
+			<label for="satisfied">I like it</label>
+			
+			<input type="radio" id="extremegood" name="satisfaction">
+			<label for="extremegood">I love it</label>
+		</fieldset>
+		
 </body>
 </html>
