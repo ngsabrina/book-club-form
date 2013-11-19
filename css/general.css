@@ -109,13 +109,13 @@ button {
 	
 	.hawkmoth {
 	max-width: 60%;
+	}
 }
 
 @media only screen and (min-width: 45em) {
 	html {
 	margin: 5%;
-	}
-	
+	}	
 }
 
 @media only screen and (min-width: 60em) {
